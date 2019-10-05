@@ -1,0 +1,71 @@
+body{
+	background: #1d1e20;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	font-family: montserrat;
+}
+
+h1{
+	color: #2c75ff;
+}
+
+p{
+	width: 500px;
+	color: white;
+	text-align: justify;
+}
+
+.container .menu-icon{
+	position: absolute;
+	color: #2c75ff;
+	font-size: 30px;
+	left: 42px;
+	top: 24px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.menu-container{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	transition: 1s ease-in-out; /** Affichage du menu avec une transition vers le bas*/
+}
+
+.menu-content{
+	position: relative;
+	top: 25%%;
+	width: 100%;
+	text-align: center;
+	margin-top: 150px; /**A revoir*/
+}
+
+.menu-content a{
+	padding: 16px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white; /** à voir si changement de la couleur ou pas*/
+	display: block;
+	font-family: montserrat;
+	transition: 0.3s ease-in-out; /** Affichage du menu avec une transition vers le haut*/
+}
+
+.menu-content a:hover{
+	background-color: #2c75ff;
+}
+
+.menu-container .closebutton{
+	position: absolute;
+	top: 36px;
+	right: 48px;
+	font-size: 30px;
+	color: #2c75ff;
+	z-index: 1;
+	cursor: pointer;
+}
