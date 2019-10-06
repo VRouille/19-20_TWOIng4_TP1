@@ -103,5 +103,11 @@ h4{
   transform: translateY(-50%);
 }
 
-
+#logo{
+	position: absolute;
+	width: 39.51px;
+	height: 30px;
+	right: 42px;
+	top: 24px;
+}
 

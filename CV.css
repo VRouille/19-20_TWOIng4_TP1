@@ -8,10 +8,17 @@ body{
 
 h1{
 	color: #2c75ff;
+	font-size: 70px;
+}
+
+h2{
+	color: #2c75ff;
+	width: 600px;
+	font-size: 40px;
 }
 
 p{
-	width: 500px;
+	width: 600px;
 	color: white;
 	text-align: justify;
 }
@@ -68,4 +75,45 @@ p{
 	color: #2c75ff;
 	z-index: 1;
 	cursor: pointer;
+}
+
+.{
+	background-size: auto auto;
+}
+
+.text{
+	padding: 130px 600px;
+}
+
+#background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 620px;
+	z-index: -1;
+}
+
+#linkedin{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 150px;
+	bottom: 25px;
+}
+
+#twitter{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 235px;
+	bottom: 25px;
+}
+
+#logo{
+	position: absolute;
+	width: 39.51px;
+	height: 30px;
+	right: 42px;
+	top: 24px;
 }

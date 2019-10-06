@@ -5,3 +5,4 @@ function openMenu(){
 function closeMenu(){
 	document.getElementById("navbar").style.height = "0%";
 }
+
