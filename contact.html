@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>CV Vincent Rouillé</title>
-	<link rel="stylesheet" type="text/css" href="CV.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
 	<link rel="shortcut icon" type="image/x-icon" href="logo.png" />
 	<a href="CV.html"><img src="logo.png" id="logo"></a>
 	<a href="https://www.linkedin.com/in/vincent-rouill%C3%A9-048b8b164/"><img src="linkedin.png" alt="logo-linkedin" id="linkedin"></a>
@@ -27,15 +27,19 @@
 	</div>
 </nav>
 <body>
-	<div class="img-container">
+	<div class="form-style">
 		<img src="photo-CV.jpg" id="background">
-		<div class="text">
-			<h1>Bonjour,</h1>
-			<h2>Je m'appelle Vincent Rouillé</h2>
-			<p>
-				Je suis actuellement en M1 Objets Connectés Réseaux et Services à l'ECE Paris. Parallèlement, je suis Responsable Marketing au sein de la Junior-Entreprise de l'ECE Paris.
-			</p>
-		</div>
+		<h1>Comment me contacter ?</h1>
+		<form>
+		    <div class="inner-wrap">
+		        <label>Prénom Nom <input type="text" name="field1" /></label>
+		        <label>Adresse E-Mail <input type="email" name="field2" /></label>
+		        <label>Votre Message <textarea name="field3"></textarea></label>
+		    </div>
+		    <div class="button-section">
+		    	<input type="submit" name="Sign Up" />
+		    </div>
+		</form>
 	</div>
 
 	<script type="text/javascript" src="cv.js"></script>

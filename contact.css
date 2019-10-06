@@ -8,19 +8,10 @@ body{
 
 h1{
 	color: #2c75ff;
-	font-size: 70px;
-}
-
-h2{
-	color: #2c75ff;
-	width: 600px;
-	font-size: 40px;
-}
-
-p{
-	width: 600px;
-	color: white;
-	text-align: justify;
+	font-size: 30px;
+	width: 500px;
+	padding-left: 600px;
+	padding-top: 100px;
 }
 
 .container .menu-icon{
@@ -50,14 +41,14 @@ p{
 	top: 25%%;
 	width: 100%;
 	text-align: center;
-	margin-top: 150px; /**A revoir*/
+	margin-top: 150px; 
 }
 
 .menu-content a{
 	padding: 16px;
 	text-decoration: none;
 	font-size: 18px;
-	color: white; /** à voir si changement de la couleur ou pas*/
+	color: white; 
 	display: block;
 	font-family: montserrat;
 	transition: 0.3s ease-in-out; /** Affichage du menu avec une transition vers le haut*/
@@ -75,10 +66,6 @@ p{
 	color: #2c75ff;
 	z-index: 1;
 	cursor: pointer;
-}
-
-.text{
-	padding: 130px 600px;
 }
 
 #background{
@@ -112,4 +99,48 @@ p{
 	height: 30px;
 	right: 42px;
 	top: 24px;
+}
+
+.form-style .inner-wrap{
+	padding-top: 40px;
+	padding-left: 600px;
+  	border-radius: 6px;
+}
+
+.form-style label{
+	display: block;
+	font: 13px montserrat;
+	margin-bottom: 15px;
+}
+
+.form-style input[type="text"],
+.form-style input[type="email"],
+.form-style textarea,
+.form-style select {
+	display: block;
+	width: 500px;
+	padding: 8px;
+	border-radius: 6px;
+	border: 2px solid #2c75ff;
+}
+
+.button-section{
+	padding-left: 600px;
+}
+
+.form-style input[type="button"], 
+.form-style input[type="submit"]{
+	background: #2c75ff;
+	padding: 8px 50px 8px 50px;
+	border-radius: 5px;
+	color: #fff;
+	font: montserrat;
+	border: 2px solid #2c75ff
+	font-size: 15px;
+}
+
+.form-style input[type="button"]:hover, 
+.form-style input[type="submit"]:hover{
+	background: white;
+	color: black;
 }
