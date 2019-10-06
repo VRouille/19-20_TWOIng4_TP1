@@ -73,38 +73,37 @@ p{
 }
 
 .text-container{
-  overflow: hidden;
-  padding: 10px;
-  position: relative;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
 }
 
-.text-container:before{
-  content: "";
-  width: 5px;
-  height: 100%;
-  background: #2c75ff;
-  position: absolute;
-  left: 20px;
+.text-container:before{ /**timeline*/
+	content: "";
+	width: 5px;
+	height: 100%;
+	background: #2c75ff;
+	position: absolute;
+	left: 20px;
 }
 
 .content{
-  padding: 20px;
-  margin: 20px 60px;
-  border-radius: 8px;
-  position: relative;
+	padding: 20px;
+	margin: 20px 60px;
+	position: relative;
 }
 
-.content:after{
-  content: "";
-  width: 20px;
-  height: 20px;
-  border: 5px solid #2c75ff;
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-  left: -63px;
-  top: 17%;
-  transform: translateY(-50%);
+.content:after{ /**cercle sur la timeline*/
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 5px solid #2c75ff;
+	background: white;
+	border-radius: 50%;
+	position: absolute;
+	left: -63px;
+	top: 23%;
+	transform: translateY(-50%);
 }
 
 #logo{

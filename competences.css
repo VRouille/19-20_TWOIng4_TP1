@@ -2,25 +2,7 @@ body{
 	background: #1d1e20;
 	color: white;
 	margin: 0px;
-	padding: 0px;
 	font-family: montserrat;
-}
-
-h1{
-	color: #2c75ff;
-	font-size: 70px;
-}
-
-h2{
-	color: #2c75ff;
-	width: 600px;
-	font-size: 40px;
-}
-
-p{
-	width: 600px;
-	color: white;
-	text-align: justify;
 }
 
 .container .menu-icon{
@@ -83,4 +65,88 @@ p{
 	height: 30px;
 	right: 42px;
 	top: 24px;
+}
+
+.slider{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	padding-top: 0;/**A voir si mettre à 50px*/
+}
+
+.slider li{
+	position: relative;
+	background: none no-repeat center/cover;
+	min-height: 100%;
+	overflow: hidden;
+	flex-grow: 1;
+	transition: 0.75 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider li:hover{
+	flex-grow: 5; /**Aggrandit l'image lorsque l'on passe la souris dessus*/
+}
+
+.slider li:hover h1{
+	transform: rotateZ(0) translateY(0); /**Rotation du texte h1 lorsque l'on passe la souris*/
+}
+
+.slider li:hover p{
+	transform: translateY(calc((100% + 2rem) * -1)) rotateZ(0);/**Rotation du texte p lorsque l'on passe la souris*/
+}
+
+.slider a{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: auto;
+	height: 100%;
+}
+
+.slider h1{
+	position: absolute;
+	top: 75px;
+	left: 1rem;
+	margin: 0;
+	font-size: 2.4rem;
+	color: #2c75ff;
+	text-transform: uppercase;
+	transform-origin: left top;
+	transform: rotateZ(90deg) translateY(-1em);
+	font-family: montserrat;
+	transition: 0.25s cubic-bezier(0.35, 0, 0, 1);
+}
+
+.slider p{
+	position: absolute;
+	top: 98%;
+	right: 1rem;
+	left: 1rem;
+	padding: 1rem;
+	font-family: montserrat;
+	transform-origin: left top;
+	transform: translateY(0) rotateZ(90deg);
+	transition: 0.5s cubic-bezier(0.35, 0, 0, 1);
+	width: 700px;
+	color : rgba(0, 0, 0, 0.7);
+	background: rgba(255, 255, 255, 0.9);
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.slider .hard-skill{
+	background-image: url(hardskills.png);
+}
+
+.slider .soft-skill{
+	background-image: url(softskills.png);
 }
