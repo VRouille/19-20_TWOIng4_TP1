@@ -74,7 +74,7 @@ h4{
   position: relative;
 }
 
-.text-container:before{
+.text-container:before{/**timeline*/
   content: "";
   width: 5px;
   height: 100%;
@@ -83,14 +83,14 @@ h4{
   left: 20px;
 }
 
-.content{
+.content{/**Positionnement du texte*/
   padding: 20px;
   margin: 20px 60px;
   border-radius: 8px;
   position: relative;
 }
 
-.content:after{
+.content:after{/**cercle sur la timeline*/
   content: "";
   width: 20px;
   height: 20px;

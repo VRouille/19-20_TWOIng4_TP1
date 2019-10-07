@@ -39,18 +39,18 @@ p{
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	z-index: 1;
+	z-index: 1;/**Au premier plan par rapport au reste*/
 	background-color: rgba(0, 0, 0, 0.8);
 	overflow: hidden;
 	transition: 1s ease-in-out; /** Affichage du menu avec une transition vers le bas*/
 }
 
-.menu-content{
+.menu-content{ /**Positionnement des éléments du menu*/
 	position: relative;
 	top: 25%%;
 	width: 100%;
 	text-align: center;
-	margin-top: 150px; /**A revoir*/
+	margin-top: 150px; 
 }
 
 .menu-content a{
@@ -64,10 +64,10 @@ p{
 }
 
 .menu-content a:hover{
-	background-color: #2c75ff;
+	background-color: #2c75ff;/**Filtre lorsque l'on passe la souris sur un des éléments du menu*/
 }
 
-.menu-container .closebutton{
+.menu-container .closebutton{ /**Croix pour fermer le menu*/
 	position: absolute;
 	top: 36px;
 	right: 48px;
@@ -77,11 +77,11 @@ p{
 	cursor: pointer;
 }
 
-.text{
+.text{/**Positonnement du texte*/
 	padding: 130px 600px;
 }
 
-#background{
+#background{ /**Positionnement de la photo de profil*/
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -90,7 +90,7 @@ p{
 	z-index: -1;
 }
 
-#linkedin{
+#linkedin{ 
 	position: absolute;
 	width: 50px;
 	height: 50px;

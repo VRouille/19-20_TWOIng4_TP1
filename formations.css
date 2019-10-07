@@ -45,14 +45,14 @@ p{
 	top: 25%%;
 	width: 100%;
 	text-align: center;
-	margin-top: 150px; /**A revoir*/
+	margin-top: 150px; 
 }
 
 .menu-content a{
 	padding: 16px;
 	text-decoration: none;
 	font-size: 18px;
-	color: white; /** à voir si changement de la couleur ou pas*/
+	color: white; 
 	display: block;
 	font-family: montserrat;
 	transition: 0.3s ease-in-out; /** Affichage du menu avec une transition vers le haut*/
@@ -87,7 +87,7 @@ p{
 	left: 20px;
 }
 
-.content{
+.content{ /**Positionnement du texte*/
 	padding: 20px;
 	margin: 20px 60px;
 	position: relative;

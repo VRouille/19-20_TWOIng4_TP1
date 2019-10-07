@@ -67,7 +67,7 @@ body{
 	top: 24px;
 }
 
-.slider{
+.slider{/**Positionnement des 2 photos*/
 	list-style: none;
 	display: flex;
 	justify-content: center;
@@ -85,11 +85,10 @@ body{
 	min-height: 100%;
 	overflow: hidden;
 	flex-grow: 1;
-	transition: 0.75 cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slider li:hover{
-	flex-grow: 5; /**Aggrandit l'image lorsque l'on passe la souris dessus*/
+	flex-grow: 5; /**Agrandit l'image lorsque l'on passe la souris dessus*/
 }
 
 .slider li:hover h1{
@@ -100,29 +99,18 @@ body{
 	transform: translateY(calc((100% + 2rem) * -1)) rotateZ(0);/**Rotation du texte p lorsque l'on passe la souris*/
 }
 
-.slider a{
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: block;
-	width: auto;
-	height: 100%;
-}
-
 .slider h1{
 	position: absolute;
 	top: 75px;
 	left: 1rem;
 	margin: 0;
+	width: 700px;
 	font-size: 2.4rem;
 	color: #2c75ff;
 	text-transform: uppercase;
 	transform-origin: left top;
-	transform: rotateZ(90deg) translateY(-1em);
+	transform: rotateZ(90deg) translateY(-1em); /**Position du h1 à la verticale*/
 	font-family: montserrat;
-	transition: 0.25s cubic-bezier(0.35, 0, 0, 1);
 }
 
 .slider p{
@@ -133,8 +121,8 @@ body{
 	padding: 1rem;
 	font-family: montserrat;
 	transform-origin: left top;
-	transform: translateY(0) rotateZ(90deg);
-	transition: 0.5s cubic-bezier(0.35, 0, 0, 1);
+	transform: translateY(0) rotateZ(90deg);/**Texte vertical de base afin de le cacher sur le côté*/
+	transition: 0.5s cubic-bezier(0.35, 0, 0, 1); /**Animation de la rotation du texte*/
 	width: 700px;
 	color : rgba(0, 0, 0, 0.7);
 	background: rgba(255, 255, 255, 0.9);
